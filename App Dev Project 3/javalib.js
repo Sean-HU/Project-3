@@ -1,6 +1,3 @@
-
-
-
 function slideFunc() {
 	var cnt;
 	var i = document.getElementsByClassName("slideshow");
@@ -15,4 +12,14 @@ function slideFunc() {
 	setTimeout(slideFunc, 5000);
 }
 
+function homeTimeout() {
+	window.open("courses.html","_self")
+}
 
+function coursesTimeout() {
+	window.open("projects.html","_self")
+}
+
+function projectsTimeout() {
+	window.open("hobby.html","_self")
+}

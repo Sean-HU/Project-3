@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sean's World</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript" language="javascript" src="javalib.js"> </script>
+
+	
+</head>
+<body>
+	<body onkeydown="keyPressedFriends(event)">
+	<script> 
+		var timeoutReset = window.setTimeout(friendsTimeout, 30000); 
+		if (window.addEventListener) {
+			window.addEventListener("mousewheel", friendsScroll, false);
+		}
+		else window.attachEvent("onmousewheel", friendsScroll);
+	</script>
+	<div class="header">
+		<H1 id="mainhead">Sean Mills, Student</H1>
+		<div id="topnav">
+		<ul>
+			<li> <a href="home.html"> Home		</a>
+		  	<li> <a href="courses.html"> Courses	</a>
+		  	<li> <a href="projects.html"> Projects	</a>
+		  	<li> <a href="hobby.html"> Hobby	</a>
+		  	<li> <a href="friends.html"> Friends	</a>
+		</ul>
+		</div>
+	</div>
+	<div class="contents">
+		<img src="friendspic.jpg">
+		<div class="info">
+			<div class="subhead">
+				<H1 id="subhead">My Friends</H1>
+			</div>
+			<p> To know who my friends are check my <a href="https://www.facebook.com/crzysean/friends?lst=100003823209895%3A100003823209895%3A1508177615&source_ref=pb_friends_tl"> 
+				friends list</a> on facebook.
+			</p>
+		</div>
+	</div>
+</body>
+</html>

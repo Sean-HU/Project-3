@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sean's World</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript" language="javascript" src="javalib.js"> </script>
+
+	
+</head>
+<body>
+	<body onkeydown="keyPressedProjects(event)">
+	<script> 
+		var timeoutReset = window.setTimeout(projectsTimeout, 30000); 
+		if (window.addEventListener) {
+			window.addEventListener("mousewheel", projectsScroll, false);
+		}
+		else window.attachEvent("onmousewheel", projectsScroll);
+	</script>
+	<div class="header">
+		<H1 id="mainhead">Sean Mills, Student</H1>
+		<div id="topnav">
+		<ul>
+			<li> <a href="home.html"> Home		</a>
+		  	<li> <a href="courses.html"> Courses	</a>
+		  	<li> <a href="projects.html"> Projects	</a>
+		  	<li> <a href="hobby.html"> Hobby	</a>
+		  	<li> <a href="friends.html"> Friends	</a>
+		</ul>
+		</div>
+	</div>
+	<div class="contents">
+		<img src="projectpic.jpg">	
+		<div class="info">
+			<div class="subhead">
+				<H1 id="subhead">My Projects</H1>
+			</div>
+			<p> This is my only project at the moment. <br>
+				Check out my repository on <a href="https://github.com/Sean-HU/Project-3"> GitHub</a> to view it.
+			</p>
+		</div>
+	</div>
+</body>
+</html>

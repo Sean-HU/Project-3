@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sean's World</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript" language="javascript" src="javalib.js"> </script>
+</head>
+<body>
+	<body onkeydown="keyPressedCourses(event)">
+	<script> 
+		var timeoutReset = window.setTimeout(coursesTimeout, 30000); 
+		if (window.addEventListener) {
+			window.addEventListener("mousewheel", coursesScroll, false);
+		}
+		else window.attachEvent("onmousewheel", coursesScroll);
+	</script>
+	<div class="header">
+		<H1 id="mainhead">Sean Mills, Student</H1>
+		<div id="topnav">
+		<ul>
+			<li> <a href="home.html"> Home		</a>
+		  	<li> <a href="courses.html"> Courses	</a>
+		  	<li> <a href="projects.html"> Projects	</a>
+		  	<li> <a href="hobby.html"> Hobby	</a>
+		  	<li> <a href="friends.html"> Friends	</a>
+		</ul>
+		</div>
+	</div>
+	<div class="contents">
+		<img src="coursepic.jpg">
+		<div class="info">
+			<div class="subhead">
+				<H1 id="subhead">My Courses</H1>
+			</div>
+			<ul id="courselist">
+				<li> Computer Science II		
+		  		<li> Intro to Mobile App Development
+		  		<li> Intro to Linear Algebra
+		  		<li> Technical Writing
+		  		<li> Computer Organization I
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

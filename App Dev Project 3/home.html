@@ -9,7 +9,11 @@
 	
 </head>
 <body>
-	<!-- <script> setTimeout(homeTimeout, 30000); </script> -->
+	<body onkeydown="keyPressedHome(event)">
+	 <script> 
+		var timeoutReset = window.setTimeout(homeTimeout, 30000);
+		window.onscroll = function() {myFunction()};
+	</script>
 	<div class="header">
 		<H1 id="mainhead">Sean Mills, Student</H1>
 		<div id="topnav">
